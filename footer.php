@@ -18,6 +18,15 @@ Based on work at <a href="http://www.livesinfocus.org">www.livesinfocus.org</a>.
 swfobject.embedSWF("<?php bloginfo('template_directory'); ?>/slideshow.swf", "prison", "400", "250", "9.0.0", "<?php bloginfo('template_directory'); ?>/expressInstall.swf");
 </script>
 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2366398-10");
+pageTracker._trackPageview();
+</script>
+
 </div>
 
 </body>
