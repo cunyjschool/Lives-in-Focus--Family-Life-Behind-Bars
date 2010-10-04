@@ -6,14 +6,12 @@ Author: Drew Geraets
 Author URI: http://www.journalism.cuny.edu
 */
 
-
-
 body {
 	margin: 0;
 	padding: 0;
 	background: #1c1a16;
 	font-size: small;
-	font-family: Trebuchet MS, Tahoma;
+	font-family: "Trebuchet MS", Tahoma;
 	line-height: 165%; }
 	
 a, a:visited {
