@@ -1,0 +1,396 @@
+/*
+Theme Name: Lives in Focus: Family Life Behind Bars
+Theme URI: livesinfocus.org
+Version: 1.0
+Author: Drew Geraets
+Author URI: http://www.journalism.cuny.edu
+*/
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #1c1a16;
+	font-size: small;
+	font-family: Trebuchet MS, Tahoma;
+	line-height: 165%; }
+	
+a, a:visited {
+	color: #61401e; }
+	
+h2 {
+	margin: 0;
+	padding: 0; }
+	
+h2 a, h2 a:visited {
+	text-decoration: none; }
+	
+h2 a:hover {
+	text-decoration: underline; }
+	
+h3 {
+	margin: 0;
+	padding: 0; }
+	
+h3#comments {
+	margin-bottom: 20px; }
+	
+ul {
+	margin: 0;
+	padding: 0; }
+	
+ol {
+	margin: 0 0 0 25px;
+	padding: 0; }
+	
+li {
+	margin: 0;
+	padding: 0; }
+	
+ul li {
+	list-style: none; }
+	
+small {
+	font-size: 11px;
+	color: #666; }
+	
+.wrap {
+	width: 1000px;
+	margin: 0 auto; }
+
+a img {
+	border: 0; }
+	
+h2.pagetitle {
+	margin: 20px; }
+			
+#left {
+	float: left;
+	width: 820px; }
+	
+ul#nav {
+	font-size: 150%;
+	margin-bottom: 40px; }
+	
+ul#nav li, ul#cats li li {
+	line-height: 185%;
+	border-bottom: 1px dotted #282621; }
+	
+ul#nav li a, ul#nav li a:visited, ul#cats li a, ul#cats li a:visited {
+	display: block;
+	padding-left: 10px; }
+	
+ul#nav li a:hover, ul#cats li a:hover {
+	background: #282621; }
+	
+.alignleft {
+	float: left;
+	margin: 20px 20px 20px 0; }
+	
+.alignright {
+	float: right;
+	margin: 20px 0 20px 20px; }
+	
+#right {
+	float: left;
+	width: 160px;
+	padding: 20px 0 20px 20px;
+	color: #faf7d3; }
+	
+#right h2 {
+	margin-top: 40px;
+	line-height: 130%; }
+	
+input#searchsubmit {
+	padding: 5px;
+	background: #282621;
+	margin: 10px 0 20px 10px;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: #e0bd72;
+	border: 0;
+	-moz-border-radius: 5px; }
+	
+input#searchsubmit:hover {
+	background: #34312a;
+	color: #fff; }
+	
+ul#recentcomments ul li {
+	padding: 10px 0;
+	border-bottom: 1px dotted #282621; }
+	
+ul#cats li {
+	list-style: none; }
+	
+#right a, #right a:visited {
+	text-decoration: none;
+	color: #e8c882; }
+	
+#right a:hover {
+	color: #fff; }
+	
+ul#cats li li ul.children li {
+	padding-left: 10px;
+	border-bottom: 0; }
+	
+#content {
+	background: #faf7d3 url(img/back.jpg) repeat-y;
+	border-right: 10px solid #151310; 
+	border-left: 10px solid #151310; 
+	border-bottom: 10px solid #151310; 
+	color: #282520; }
+	
+#content h2 {
+	font-size: 115%;
+	margin-bottom: 20px; }
+	
+#content img {
+	margin: 0 20px 20px 0;
+	border: 5px solid #e3ddbb; }
+	
+#content img#logo {
+	border: 0;
+	float: none;
+	margin: 0;
+	float: none; }
+		
+#content img.feed {
+	border: 0;
+	margin: 3px 0 0 0; }
+	
+.post {
+	margin-bottom: 10px;
+	padding: 20px;
+	border-bottom: 1px solid #e5e1ba; }
+	
+.post h3 {
+	font-size: 16px; }
+	
+#content .post h2 {
+	margin-bottom: 10px; }
+	
+#topstories {
+	border-right: 1px solid #e5e1ba;
+	padding-right: 20px;
+	margin-right: 20px;
+	float: left;
+	width: 410px; }
+	
+#topstories h2 {
+	font-size: 115%; }
+	
+.byline-date, .date {
+	font-size: 80%;
+	color: #666;
+	text-transform: uppercase; }
+
+.simplepie li, ul.headline li, li.delicious-post {
+	margin: 10px 0;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #e5e1ba;
+	padding-left: 20px;
+	background: url(img/arrow_right.png) no-repeat 0 3px; }
+  
+.simplepie h3{
+  display: none;
+}
+	
+ul.headline li h3 a, ul.headline li h3 a:visited {
+	text-decoration: none; }	
+	
+ul.headline li h3 a:hover {
+	text-decoration: underline; }
+	
+#community {
+	width: 300px;
+	float: left; }
+	
+#community ol li {
+	font-size: 130%;
+	margin-bottom: 10px; }
+	
+#community ol li div {
+	font-size: 70%; }
+	
+#audio {
+	padding-right: 20px;
+	margin-right: 20px;
+	border-right: 1px solid #e5e1ba;
+	clear: both;
+	float: left;
+	width: 250px; }
+
+#video {
+	width: 450px;
+	float: left; }	
+	
+.title {
+	padding: 10px;
+	background: #e0dcb5;
+	-moz-border-radius: 5px;
+	margin: 25px 0 20px 0; }
+	
+.title a, .title a:visited {
+	text-decoration: none; }
+	
+.title a:hover {
+	text-decoration: underline; }
+	
+.title h3 {
+	float: left;
+	margin: 0 10px 0 0; }
+	
+.title img {
+	float: right; }
+	
+#stories {
+	padding: 20px;
+	background: #473722;
+	color: #f2eec9;
+	margin: 0; }
+	
+#stories h3 {
+	margin-bottom: 20px;
+	color: #735d40; }
+	
+#stories a, #stories a:visited {
+	color: #f2eec9; }
+	
+.postmetadata {
+	clear: both;
+	background: #e5e1ba;
+	padding: 10px;
+	font-size: 90%;
+	-moz-border-radius: 5px; }
+	
+.postmetadata li {
+	padding-left: 22px;
+	line-height: 200%; }
+	
+li#timestamp {
+	background: url(img/icons/date.png) no-repeat 0 2px; }
+	
+li#rss {
+	background: url(img/icons/feed.png) no-repeat 0 2px; }
+	
+li#cat {
+	background: url(img/icons/folder_page_white.png) no-repeat 0 2px; }
+	
+li#tags {
+	background: url(img/icons/tag_orange.png) no-repeat 0 2px; }
+	
+li#audioicon {
+	padding-left: 20px;
+	background: url(img/icons/sound.png) no-repeat 0 2px; }
+	
+#audio-left li, #audio-right li {
+	padding-left: 20px;
+	margin: 5px 0;
+	background: url(img/icons/sound.png) no-repeat 0 2px; }
+	
+#audio-left {
+	float: left;
+	margin: 20px;
+	width: 250px; }
+
+#audio-right {
+	float: right;
+	margin: 20px;
+	width: 250px; }
+	
+#slideshow {
+	border: 5px solid #e5e1ba; }
+		
+#media {
+	float: right;
+	width: 300px; }
+	
+#videos {
+	float: right;
+	width: 300px;
+	margin: 20px; }
+	
+#video-embed {
+	margin: 20px 0; }
+	
+.video-caption {
+	font-size: 90%;
+	padding: 10px; }
+	
+.commentmetadata {
+	font-size: 90%; }
+	
+#content ol.commentlist li img {
+	margin-bottom: 0; }
+	
+#content ol.commentlist li {
+	margin-bottom: 20px; }
+
+#comments {
+	padding: 20px; }
+
+#alt-login-methods {
+	height: 35px;
+}
+
+#comments h3 {
+	margin: 10px 0; }
+	
+img.alignleft {
+	float: left;
+	margin: 20px; }
+	
+img.alignright {
+	float: right;
+	margin: 20px; }
+	
+.wp-caption {
+	background: #e2deb7;
+	border: 1px solid #cecaa2;
+	padding: 10px;
+	font-size: 90%;
+	padding: 10px; }
+
+.wp-caption img {
+	margin: 0;
+	padding: 0; }
+	
+.wp-caption img.alignleft, .wp-caption img.alignright {
+	float: none;
+	margin: 0;
+	padding: 0; }
+	
+.wp-caption a img, .wp-caption a:visited img {
+	text-decoration: none;
+	border: 1px solid #cecaa2; }
+	
+#content .simpleie a, #content simplepie a:visited {
+	text-decoration: none; }
+	
+#footer {
+	background: #1c1a16; 
+	color: #faf7d3;
+	margin: 0 0 40px 20px;
+	width: 740px;
+	padding: 20px; }
+	
+#footer a, #footer a:visited {
+	color: #e8c882; }
+	
+#footer a:hover {
+	color: #fff; }
+
+.clearfix {
+	overflow: auto; }
+	
+.clear{
+  clear:both;
+  width:100%;
+  height:0px;
+  display:block;
+}
+
+.twitter{
+  margin-top:0 !important;
+}
