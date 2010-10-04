@@ -11,19 +11,19 @@
 
         <div class="entry">
     
-	<?php if(get_post_meta($post->ID, video, true) != "") { ?>
+	<?php if(get_post_meta($post->ID, 'video', true) != "") { ?>
           <div id="videos">
             <div id="video-embed">
-	  <?php echo get_post_meta( $post->ID,"video", $single=true ) ; ?>
-        <?php if(get_post_meta($post->ID, video_caption, true) != "") { ?>
-              <div class="video-caption"><?php echo get_post_meta( $post->ID,"video_caption", $single=true ) ; ?></div>
+	  <?php echo get_post_meta( $post->ID,"video", true ) ; ?>
+        <?php if(get_post_meta($post->ID, 'video_caption', true) != "") { ?>
+              <div class="video-caption"><?php echo get_post_meta( $post->ID,"video_caption", true ) ; ?></div>
 		<?php } ?>
             </div>
         
             <div id="video-embed">
-	  <?php echo get_post_meta( $post->ID,"video2", $single=true ) ; ?>
-        <?php if(get_post_meta($post->ID, video2_caption, true) != "") { ?>
-              <div class="video-caption"><?php echo get_post_meta( $post->ID,"video2_caption", $single=true ) ; ?></div>
+	  <?php echo get_post_meta( $post->ID,"video2", true ) ; ?>
+        <?php if(get_post_meta($post->ID, 'video2_caption', true) != "") { ?>
+              <div class="video-caption"><?php echo get_post_meta( $post->ID,"video2_caption", true ) ; ?></div>
 		<?php } ?>
             </div>
           </div>
