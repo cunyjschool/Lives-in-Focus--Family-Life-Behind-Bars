@@ -4,7 +4,7 @@
   
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 United States License</a>.<br />
 
-<?php /* Based on work at <a href="http://www.livesinfocus.org">www.livesinfocus.org</a>.</p> */ ?>
+Based on work at <a href="http://www.livesinfocus.org">www.livesinfocus.org</a>.</p>
   
 <p align="center">
 <?php bloginfo('name'); ?> is proudly powered by <a href="http://wordpress.org/">WordPress</a><br />
