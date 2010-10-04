@@ -10,12 +10,6 @@
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/swfobject.js"></script>
-<script type="text/javascript">
-swfobject.embedSWF("<?php bloginfo('template_directory'); ?>/slideshow.swf", "prison", "400", "250", "9.0.0", "<?php bloginfo('template_directory'); ?>/expressInstall.swf");
-</script>
-
-    
 
 <?php wp_head(); ?>
 </head>
@@ -24,4 +18,4 @@ swfobject.embedSWF("<?php bloginfo('template_directory'); ?>/slideshow.swf", "pr
 <div class="wrap">
   <div id="left">
     <div id="content">
-<a href="/prison/"><img src="<?php bloginfo('template_directory'); ?>/img/logo.jpg" alt="Lives in Focus: Family Life Behind Bars" id="logo" /></a>
+<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.jpg" alt="Lives in Focus: Family Life Behind Bars" id="logo" /></a>

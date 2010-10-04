@@ -12,6 +12,14 @@ Based on work at <a href="http://www.livesinfocus.org">www.livesinfocus.org</a>.
   </div>
 
 <?php wp_footer(); ?>
+
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/swfobject.js"></script>
+<script type="text/javascript">
+swfobject.embedSWF("<?php bloginfo('template_directory'); ?>/slideshow.swf", "prison", "400", "250", "9.0.0", "<?php bloginfo('template_directory'); ?>/expressInstall.swf");
+</script>
+
 </div>
+
+</body>
 
 
