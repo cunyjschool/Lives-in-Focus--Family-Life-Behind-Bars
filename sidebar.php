@@ -16,7 +16,11 @@
   <li><a href="<?php bloginfo('url'); ?>/links/">Helpful Links</a></li>
 </ul>
 
-<?php mc_display_widget(); ?>
+<?php 
+if ( function_exists('mc_display_widget') ) {
+	mc_display_widget();
+}
+?>
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
