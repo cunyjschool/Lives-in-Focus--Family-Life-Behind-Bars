@@ -6,11 +6,11 @@
       </div>
 
       <div class="title clearfix">
-        <h3>Top Stories</h3> <a href="/prison/category/top-stories/feed/"><img src="<?php bloginfo('template_directory'); ?>/img/icons/feed.png" class="feed" alt="Subscribe to Top Stories" /></a>        
+        <h3>Top Stories</h3> <a href="<?php bloginfo('url'); ?>/category/top-stories/feed/"><img src="<?php bloginfo('template_directory'); ?>/img/icons/feed.png" class="feed" alt="Subscribe to Top Stories" /></a>        
       </div>
 
       <ul class="headline">
-        <?php query_posts('cat=8&showposts=8'); ?>
+        <?php query_posts('category_name=top-stories&showposts=8'); ?>
       	  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <li>
               <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
@@ -27,26 +27,28 @@
       </div>
       
       <?php
-echo SimplePieWP('http://feeds.feedburner.com/twitter/prisonfamilies', array(
-	'items' => 4,
-	'cache_duration' => 1800,
-	'truncate_feed_title' => 0,
-	'truncate_item_parent_title' => 0,
-	'date_format' => 'j M Y, g:i a'
-));
+if ( function_exists('SimplePieWP') ) {
+	echo SimplePieWP('http://feeds.feedburner.com/twitter/prisonfamilies', array(
+		'items' => 4,
+		'cache_duration' => 1800,
+		'truncate_feed_title' => 0,
+		'truncate_item_parent_title' => 0,
+		'date_format' => 'j M Y, g:i a'
+	));
+}
 ?>
           
       <ul class="headline">
-        <li><a href="http://www.facebook.com/home.php?ref=home#!/group.php?v=wall&gid=37924049685" target='_blank'>Join the community</a> & <a href="http://twitter.com/prisonfamilies">follow us on Twitter</a></li>
+        <li><a href="http://www.facebook.com/group.php?v=wall&gid=37924049685" target='_blank'>Join the community</a> & <a href="http://twitter.com/prisonfamilies">follow us on Twitter</a></li>
       </ul>         
         
       
       <div class="title clearfix">
-        <h3>Columns</h3> <a href="/prison/category/columns/feed/"><img src="<?php bloginfo('template_directory'); ?>/img/icons/feed.png" class="feed" alt="Subscribe to Columns" /></a>        
+        <h3>Columns</h3> <a href="<?php bloginfo('url'); ?>/category/columns/feed/"><img src="<?php bloginfo('template_directory'); ?>/img/icons/feed.png" class="feed" alt="Subscribe to Columns" /></a>        
       </div>
         
       <ul class="headline">
-        <?php query_posts('cat=4&showposts=2'); ?>
+        <?php query_posts('category_name=makebas-column&showposts=2'); ?>
       	  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
             <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
       	  <?php endwhile; else: ?><p>There are currently no stories.</p>
@@ -54,11 +56,11 @@ echo SimplePieWP('http://feeds.feedburner.com/twitter/prisonfamilies', array(
       </ul>
 
       <div class="title clearfix">
-        <h3>Audio</h3> <a href="/prison/category/audio/feed/"><img src="<?php bloginfo('template_directory'); ?>/img/icons/feed.png" class="feed" alt="Subscribe to Top Stories" /></a>
+        <h3>Audio</h3> <a href="<?php bloginfo('url'); ?>/category/audio/feed/"><img src="<?php bloginfo('template_directory'); ?>/img/icons/feed.png" class="feed" alt="Subscribe to Top Stories" /></a>
       </div>
 
       <ul class="headline">
-        <?php query_posts('cat=3&showposts=2'); ?>
+        <?php query_posts('category_name=audio&showposts=2'); ?>
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
           <?php endwhile; else: ?><p>There are currently no stories.</p>
@@ -70,25 +72,16 @@ echo SimplePieWP('http://feeds.feedburner.com/twitter/prisonfamilies', array(
       <div class="title clearfix">
         <h3>Related News</h3><a name="relatednews"></a>
       </div>
-      <!-- <?php
-      echo SimplePieWP('http://feeds.delicious.com/v2/rss/familylifebehindbars', array(
-        'items' => 8,
-        'cache_duration' => 1800,
-        'truncate_feed_title' => 0,
-        'truncate_item_parent_title' => 0,
-        'date_format' => 'j M Y, g:i a'
-      ));
-      ?> -->
 
       <script type="text/javascript" src="http://feeds.delicious.com/v2/js/FamilyLifeBehindBars?title=&count=9&sort=date"></script>
     </div>
     <div id="video">
       <div class="title clearfix">
-        <h3>Video</h3> <a href="/prison/category/video/feed/"><img src="<?php bloginfo('template_directory'); ?>/img/icons/feed.png" class="feed" alt="Subscribe to Video" /></a>
+        <h3>Video</h3> <a href="<?php bloginfo('url'); ?>/category/video/feed/"><img src="<?php bloginfo('template_directory'); ?>/img/icons/feed.png" class="feed" alt="Subscribe to Video" /></a>
       </div>	
       <embed src="http://blip.tv/play/AwGN8QE" type="application/x-shockwave-flash" width="450" height="350" allowscriptaccess="always" allowfullscreen="true"></embed>
     	
-    <?php query_posts('cat=9&showposts=3'); ?>
+    <?php query_posts('category_name=video&showposts=3'); ?>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="headline clearfix" style="margin-top: 20px;">
           <span class="byline-date">By <a href="<?php the_author_url(); ?>"><?php the_author_firstname(); ?> <?php the_author_lastname(); ?></a> | <?php the_time('F jS, Y') ?></span>
